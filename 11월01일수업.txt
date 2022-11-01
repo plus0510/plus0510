@@ -24,3 +24,11 @@ credential.https://dev.azure.com.usehttppath=true
 init.defaultbranch=master
 user.name=plus0510
 user.email=cy0510@naver.com
+
+echo "# plus0510" >> README.md
+git init  							#폴더 생성
+git add README.md					
+git commit -m "first commit"				#설명글 추가
+git branch -M main
+git remote add origin https://github.com/plus0510/plus0510.git	#주소생성
+git push -u origin main					#올리는거
