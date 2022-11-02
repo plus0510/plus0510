@@ -107,7 +107,7 @@ a=[5,8,7,9,10]
 #     print(answer)
 # print(f"홀수는 {cnt1}개 이고 짝수는 {cnt2}개입니다.")
 
-a=[47, 90, 1, 22, 9, 5]
+a=[47, 90, 1, 22, 9, 5, 8, 27, 16 , 32]
 tmp = {
         0:{"str":"2와 3의 공배수도 아닌 것은 ","count":0}, 
         2:{"str":"2의 배수만인 것은 ","count":0}, 
@@ -119,14 +119,14 @@ for el in a:
     answer = f"{el}는 "
     if el%2 ==0 and el%3 == 0 :
         answer += "2와 3의 공배수입니다"
-        tmp[6]['count'] = tmp.get(0).get('count')+1
+        tmp[6]['count'] = tmp.get(6).get('count')+1
     elif el%2 == 0 or el%3 == 0 :
         if el%2 == 0 :
             answer += "2의 배수입니다"
-            tmp[2]['count'] = tmp.get(0).get('count')+1
+            tmp[2]['count'] = tmp.get(2).get('count')+1
         elif el%3 == 0 :   
             answer += "3의 배수입니다"
-            tmp[3]['count'] = tmp.get(0).get('count')+1
+            tmp[3]['count'] = tmp.get(3).get('count')+1
     else :
         answer += "2와 3의 공배수아닙니다"
         tmp[0]['count'] = tmp.get(0).get('count')+1
