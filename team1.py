@@ -10,9 +10,9 @@ a = [
 [87, 13, 82, 38, 31, 12, 29, 29, 87]
 ]
 
-#열에서 최댓값 위치 구하기        
+#행에서 최댓값 위치 구하기        
 # for i in a:
-#     answer = f"{i}행의 최댓값은 {max(i)}이고"
+#     answer = f"{i} 행의 최댓값은 {max(i)}이고"
 #     j=0
 #     while j<len(i):
 #         if i[j] == max(i):
@@ -23,7 +23,8 @@ a = [
 #     answer += "에 있습니다."
 #     print(answer)
 
-# 열에서 최솟값 위치 구하기        
+
+# 행에서 최솟값 위치 구하기        
 # for i in a:
 #     answer = f"{i}행의 최솟값은 {min(i)}이고"
 #     j=0
@@ -55,3 +56,20 @@ a = [
 #         num+=1
 # answer += "리스트입니다."
 # print(answer)
+
+# 각행 소수 개수  4
+# 1. 하나부터 소수 
+# 2. 리스트에서 소수 개수 구하기
+# 3. 많은 리스트에서 각각 소수 개수 구하기 
+
+# b=[]
+# for i in range(0,len(a)):
+#     b = a[i]
+#     j=0
+#     cnt=0
+#     while j<len(i):
+#         if i[j] == max(i):
+#             j+=1
+#             continue
+#         j+=1
+    
