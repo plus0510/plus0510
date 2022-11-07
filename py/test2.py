@@ -1,4 +1,3 @@
-#import 
 # import 
 import random
 from datetime import datetime
@@ -22,8 +21,8 @@ def make_six_number():
             lotto.append(num)
     lotto.sort()
     return lotto
-    
-file = open("../csv/LottoAndDate.csv","w" ,encoding="utf-8")
+
+file = open("../csv/lotto.txt","w", encoding="utf-8")
 
 for i in range(0,5):
     lotto = make_six_number()
@@ -35,3 +34,9 @@ for i in range(0,5):
     file.write("\n")
 file.write(f"출력시간 : {str(datetime.today()).split('.')[0]}")
 file.close()
+
+# 김철수 박김김 
+# str(6.631224828091003)
+# "6.631224828091003".split(".")
+# ["6","631224828091003"][0]
+# int(["6","631224828091003"][0])

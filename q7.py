@@ -1,115 +1,41 @@
-#함수
-# def sum(a,b): # 매개변수
-#     print(a)
-#     print(b)
-#     return a+b
+# 1시간은 혼자 풀어보고 1~2
+# 1시간 회의 해서 2~3
+# 30분 3 ~3.5
+a = [
+[3, 23, 85, 34, 17, 74, 25, 52, 65] ,
+[10, 7, 39, 42, 88, 52, 14, 72, 63] ,
+[87, 42, 18, 78, 53, 45, 18, 84, 53],
+[34, 28, 64, 85, 12, 16, 75, 36, 55],
+[21, 77, 45, 35, 28, 75, 90, 76, 1],
+[25, 87, 65, 15, 28, 11, 37, 28, 74],
+[65, 27, 75, 41, 7, 89, 78, 64, 39],
+[47, 47, 70, 45, 23, 65, 3, 41, 44],
+[87, 13, 82, 38, 31, 12, 29, 29, 80]
+]
 
-# def sum(a:int,b:int): # 매개변수
-#     try: #시도
-#         return a+b
-#     except: #예외
-#         return "에러"
+# 각행 소수 개수  4
+# 최대값이 각행 몇열에 있는지	3
+# 최소값이 각행 몇열에 있는지	1
+# 열에 합으로 가장 큰 열 과 그 수	2
 
-# print(sum(1,2)) # 1,2 인수
-# print(sum("hi",4)) #작동x
-
-# def diff(a:int,b:int):
-#     answer = ""
-#     try:
-#         if a-b < 0 :
-#             answer = 0
-#         else:
-#             return a-b
-#     except:
-#         return "에러"
-#     finally:
-#         return answer
-# print(diff(1,4))
-# print(diff(7,4))
-# print(diff("hi",4))
-# print(diff(diff(1,4),diff(4,2)))
-
-def filtering(a:list):
-    c=[]
-    a.append()
-    for i in range(0,len(a)):
-        if a[i]%2 == 1:
-            c.append(a[i])
-    return c
+# 각행 소수 개수  4
+# 1. 하나부터 소수 
+# 2. 리스트에서 소수 개수 구하기
+# 3. 많은 리스트에서 각각 소수 개수 구하기 
 
 
-# list1=[0,1,3,5,7,9,10,11,13]
-# list2=[13,9,2,22,4,5,65,32]
-# list3=[90,23,4,634,12,42,82]
-# list4 = "100"
-# print(filtering(list1))
-# print(filtering(list2))
-# print(filtering(list3))
-# print(list4[0])
-
-# def sum(*nums):
-#     print(type(nums))
-#     answer = 0
-#     for num in nums:
-#         answer = answer + num
-#     return answer
-
-# print(sum(1,2,3,4,5,6))
-# print(sum(5,6,7))
-pe=[] #전역변수
-def make_profile(**a):
-    del a["age"]   # 입력값 일부분 삭제
-    return a
-
-def peoples(*t_peoples) :
-    answer = list(t_peoples) #전역변수
-    for p in t_peoples:
-        pe.append(p)
-    return answer
+# 최대값이 각행 몇열에 있는지	3
+# 1. 하나의 리스트부터 최대값 구하기
+# 2. 하나의 리스트부터 어디에 최대값이 있는지 
+# 3. 각 리스트에서 최대값을 어디에 구하기
 
 
-tmp = peoples(
-    make_profile(name='park', age=20, company="naver"),
-    make_profile(name='kim', age=20, company="kakao"),
-    make_profile(name='lee', age=20, company="kupang")
-    )
+# 최소값이 각행 몇열에 있는지	1
+# 1. 하나의 리스트부터 최소값 구하기
+# 2. 하나의 리스트부터 어디에 최소값이 있는지 
+# 3. 각 리스트에서 최소값을 어디에 구하기
 
-for p in tmp:
-    pe.append(p)
-
-tmp = peoples(
-    make_profile(name='park', age=20, company="naver"),
-    make_profile(name='kim', age=20, company="kakao"),
-    make_profile(name='lee', age=20, company="kupang")
-    )
-for p in tmp:
-    pe.append(p)
-print(pe)
-
-# print(make_profile(name='park', age=20, company="naver"))
-# print(make_profile("park", 20, "naver", {"name":"park", "age" : 1}),[1,2,3,4])
-
-# 함수
-# 정의할 때는
-# def 이름(매개변수):
-# def print(st):
-# print("hi") 함수다 "hi" 인수다
-# def print(*st) # type(st) = tuple
-# print("hi","hello",1,2,3)
-# def print(**st) # type(st) = dict
-# print(name="kim", age=20)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 열에 합으로 가장 큰 열 과 그 수	2
+# 1. 하나의 리스트에 합
+# 2. 각 리스트의 합을 구하기
+# 3. 어디가 가장 큰지 
